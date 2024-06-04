@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* progress bar background color changes */
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: rgb(121, 82, 179) !important;
+}
+
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  background-color: #fff !important;
+}
+
+#name-textfield , #email-textfield {
+  margin: 5px;
+}
+
+#subject-textfield , #message-textfield{
+  margin: 5px;
+}
