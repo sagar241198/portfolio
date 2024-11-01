@@ -1,13 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex } from './styled';
-
-import ProfilePic from '../../../assets/images/sagar-profile-image.avif'
-import Button from '@mui/material/Button';
-import DownloadIcon from '@mui/icons-material/Download';
-
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+import personalInfo from '../about/detail-info.json'
 import LinearWithValueLabel from './progress';
 
 const AboutContainer = styled.div`
@@ -42,41 +36,38 @@ const SubTitle = styled.span`
 `;
 
 const SkillCopmp = () => (
-    <AboutContainer>
-        <Title>My Skills</Title>
-        <SubTitleContainer>
-            <SubTitle>What I Know ?</SubTitle>
-        </SubTitleContainer>
-        <Flex>
-            <div style={{ width: '50%', }}>
+  <AboutContainer>
+    <Title>My Skills</Title>
+    <SubTitleContainer>
+      <SubTitle>What I Know ?</SubTitle>
+    </SubTitleContainer>
+    <Flex>
+      <div style={{ width: '50%', }}>
 
-                <div style={{
-                    textAlign: 'left',
-                    padding: '40px'
-                }}>
-                    <Title>My skills & experiences.</Title>
-                    <p>
-                        I am currently learning from curriculum of FreeCodeCamp and youtube channel CodeWithHarry.
-                    </p>
-                </div>
+        <div style={{
+          textAlign: 'left',
+          padding: '40px'
+        }}>
+          <Title>My skills & experiences.</Title>
+          <p>
+            {personalInfo.skills}
+          </p>
+        </div>
 
-            </div>
-            <div style={{ width: '50%', textAlign: 'left' }}>
-                <div style={{padding: '40px'}}>
-                   <LinearWithValueLabel label='Java Script' value={75} />
-                   <LinearWithValueLabel label='Python and Django(framework)' value={60} />
-                    <LinearWithValueLabel label='Frontend development' value={80} />
-                    <LinearWithValueLabel label='Mobile App development' value={75} />
+      </div>
+      <div style={{ width: '50%', textAlign: 'left' }}>
+        <div style={{ padding: '40px' }}>
+          <LinearWithValueLabel label='Java Script' value={80} />
+          <LinearWithValueLabel label='Python and Django(framework)' value={60} />
+          <LinearWithValueLabel label='Frontend development' value={90} />
+          <LinearWithValueLabel label='Mobile App development' value={90} />
+          <LinearWithValueLabel label='Backend development' value={90} />
+          <LinearWithValueLabel label='Database' value={70} />
+        </div>
+      </div>
 
-                    <LinearWithValueLabel label='Backend development' value={75} />
-                   <LinearWithValueLabel label='Database' value={60} />
-
-
-                </div>
-            </div>
-
-        </Flex>
-    </AboutContainer>
+    </Flex>
+  </AboutContainer>
 );
 
 export default SkillCopmp;

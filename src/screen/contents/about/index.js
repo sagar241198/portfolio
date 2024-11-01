@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex } from './styled';
 
-import ProfilePic from '../../../assets/images/sagar-profile-image.avif'
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
+
+import personalDetail from './detail-info.json'
 
 const AboutContainer = styled.div`
   text-align: center;
@@ -46,7 +47,7 @@ const App = () => (
         <Flex>
             <div style={{ width: '50%', }}>
 
-                <img src={ProfilePic} style={{
+                <img src='./my-profile.jpeg' style={{
                     width: '70%',
                     height: '70%',
                     marginTop: '30px'
@@ -54,11 +55,9 @@ const App = () => (
 
             </div>
             <div style={{ width: '50%', textAlign: 'left' }}>
-                <Title>I am Sagar Kumar</Title>
+                <Title>I am {personalDetail.name}</Title>
                 <div>
-                    <p>
-                        Lorem Suspendisse potenti. Mauris vitae bibendum libero, et varius lectus. Ut pharetra nibh non sem ullamcorper, nec suscipit leo fermentum. Curabitur vehicula, orci ac tincidunt varius, nunc tortor malesuada odio, et fermentum eros ex et odio. Ut auctor purus eget nisl tristique, vitae efficitur risus dignissim. Vivamus nec orci at ex volutpat blandit ut sit amet dolor. Sed ultricies eros a nibh convallis, sit amet efficitur risus hendrerit. Duis ut sapien quis nunc fermentum feugiat.
-                    </p>
+                    <p>{personalDetail.detail}</p>
 
                     <Button
                         component="label"
