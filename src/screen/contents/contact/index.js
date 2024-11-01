@@ -2,17 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, FlexColumn, FlexRow } from './styled';
 
-import ProfilePic from '../../../assets/images/sagar-profile-image.avif'
+import personalInfo from '../about/detail-info.json'
 import Button from '@mui/material/Button';
-import DownloadIcon from '@mui/icons-material/Download';
-
 import TextField from '@mui/material/TextField';
-
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import ContactForm from '../../../container/mail-form';
 
 const AboutContainer = styled.div`
   text-align: center;
@@ -67,57 +63,35 @@ const ContactCompo = () => (
                     padding: '0px 40px',
                 }}>
                     <FlexRow>
-                        <PersonOutlineOutlinedIcon sx={{ fontSize: 60,color:'rgb(121, 82, 179)' }} />
+                        <PersonOutlineOutlinedIcon sx={{ fontSize: 60, color: 'rgb(121, 82, 179)' }} />
                         <FlexColumn >
                             <label>Name</label>
-                            <label>Sagar Kumar</label>
+                            <label>{personalInfo.name}</label>
 
                         </FlexColumn>
 
                     </FlexRow>
 
                     <FlexRow>
-                        <HomeOutlinedIcon sx={{ fontSize: 60,color:'rgb(121, 82, 179)' }} />
+                        <HomeOutlinedIcon sx={{ fontSize: 60, color: 'rgb(121, 82, 179)' }} />
                         <FlexColumn>
                             <label>Address</label>
-                            <label>Bangalore Karnatka</label>
+                            <label>{personalInfo.location}</label>
                         </FlexColumn>
-
-
                     </FlexRow>
 
                     <FlexRow>
-                        <MailOutlineOutlinedIcon sx={{ fontSize: 60,color:'rgb(121, 82, 179)' }} />
+                        <MailOutlineOutlinedIcon sx={{ fontSize: 60, color: 'rgb(121, 82, 179)' }} />
                         <FlexColumn>
                             <label>Email</label>
-                            <label>sagar241198@gmail.com</label>
+                            <label>{personalInfo.email}</label>
                         </FlexColumn>
-
-
                     </FlexRow>
                 </div>
 
             </div>
             <div style={{ width: '50%', textAlign: 'left' }}>
-                <Title>Message me</Title>
-                <div style={{ marginTop: '10px' }}>
-
-                    <div style={{ display: 'flex', padding: '10px' }}>
-                        <TextField id="name-textfield" label="Name" variant="outlined" />
-                        <TextField id="email-textfield" label="Email" variant="outlined" />
-                    </div>
-                    <div style={{ padding: '10px' }}>
-                        <TextField id="subject-textfield" label="Subject" variant="outlined" />
-                    </div>
-                    <div style={{ padding: '10px' }}>
-                        <TextField id="message-textfield" label="Message" variant="outlined" />
-                    </div>
-                    <div style={{ padding: '10px' }}>
-                        <Button variant="contained" size="small">
-                            Message
-                        </Button>
-                    </div>
-                </div>
+                <ContactForm />
             </div>
 
         </Flex>

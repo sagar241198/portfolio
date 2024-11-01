@@ -1,0 +1,8 @@
+{
+    "name": "Sagar Kumar",
+    "detail": "I'm a versatile MERN stack developer with additional experience in Django and core Java. I have an understanding of CI/CD pipelines to streamline deployment processes, and I’m skilled in building mobile applications with React Native. I’m passionate about developing efficient, scalable solutions and am always eager to take on new challenges in both web and mobile development.",
+    "skills": "I am a skilled MERN stack developer proficient in creating robust and dynamic web applications using React for frontend and Node.js with Express for backend development. My backend experience extends to Django, allowing me to work seamlessly across various frameworks. I am comfortable managing databases like MongoDB and MySQL, ensuring efficient data handling and retrieval. With a solid foundation in core Java, I bring versatile programming skills to each project. My familiarity with CI/CD pipelines enables smooth deployment processes, and I’m experienced in version control using Git and GitHub. Additionally, I integrate secure user authentication, including Google login and Passport.js, and implement cron jobs for scheduled tasks. I can also develop mobile applications using React Native, allowing me to create a cohesive user experience across web and mobile platforms.",
+    "email": "sagar241198@gmail.com",
+    "contact": "(+91) 9915 278 238, 6205 962 977",
+    "location": "Bangalore"
+}

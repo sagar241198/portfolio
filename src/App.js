@@ -33,10 +33,6 @@ function App() {
       {/* Conatact components */}
       <ContactCompo />
 
-      
-
-      
-
     </Conatainer>
   );
 }
